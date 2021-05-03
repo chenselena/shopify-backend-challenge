@@ -3,8 +3,7 @@ const path = require("path");
 const fileRoute = require("./routes/file");
 const mongoose = require("mongoose");
 
-const uri =
-  "mongodb+srv://selenachen:Password@cluster0.r6qaw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const uri = "";
 
 mongoose.connect(uri, {
   useNewUrlParser: true,
