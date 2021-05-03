@@ -3,14 +3,14 @@ const path = require("path");
 const fileRoute = require("./routes/file");
 const mongoose = require("mongoose");
 
-mongoose.connect(
-  "mongodb+srv://selenachen:Password@cluster0.r6qaw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-  }
-);
+const uri =
+  "mongodb+srv://selenachen:Password@cluster0.r6qaw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+
+mongoose.connect(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+});
 
 const app = express();
 
