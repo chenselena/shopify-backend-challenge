@@ -2,6 +2,8 @@
 
 This is an image repository created for the Shopify backend challenge for Fall 2021. It allows users to add images, view images, and search images. Users can also delete and download images that have been uploaded.
 
+![alt text](https://github.com/chenselena/shopify-backend-challenge/blob/main/screenshots/Screen%20Shot%202021-05-03%20at%2016.17.27.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Tech Stack
