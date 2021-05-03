@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+.active {
+  color: #6e6e6e;
+}
+
+.errorMsg {
+  color: #f21e08;
+  background: #fff0f0;
+  padding: 12px;
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.header {
+  margin-bottom: 20px;
+  padding-top: 18px;
+  font-family: "Karla", sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .header-color {
+    color: #6bc5e8;
+  }
+  h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #292929;
+  }
+  nav {
+    font-weight: 400;
+    padding-top: 8px;
+    font-size: 15px;
+    text-align: center;
+    a,
+    a:visited {
+      color: #292929;
+      margin: 10px;
+    }
+    a:hover,
+    a:active {
+      color: #6bc5e8;
+    }
+  }
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  input {
+    padding: 10px 35px 10px 10px;
+    margin: 5px;
+    font-family: "Karla", sans-serif;
+    width: 250px;
+  }
+  .input-description {
+    height: 60px;
+    word-break: break-word;
+  }
+  .upload-section {
+    font-family: "Karla", sans-serif;
+    font-size: 15px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    display: flex;
+    max-height: 60%;
+    max-width: 60%;
+
+    & > div {
+      width: 50%;
+    }
+  }
+  .drop-zone {
+    margin-bottom: 10px;
+    padding: 40px 10px;
+    height: inherit;
+    border: 2px dashed #e9ebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow-wrap: break-word;
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    padding: 8px 12px 8px 12px;
+    font-family: "Karla", sans-serif;
+    font-size: 15px;
+    background-color: #e3f7ff;
+    border: 1px solid;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+  }
+  button:hover {
+    background-color: #fff;
+  }
+  button:active {
+    color: #6bc5e8;
+    background-color: #e3f7ff;
+  }
+}
+
+.image-preview {
+  height: inherit;
+  margin-left: 5%;
+}
+
+.preview-image {
+  width: 100%;
+  height: inherit;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.preview-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.files-container {
+  width: 98%;
+  overflow-x: auto;
+  .search-bar {
+    padding: 10px 35px 10px 10px;
+    font-family: "Karla", sans-serif;
+    margin-bottom: 15px;
+  }
+  .no-images {
+    font-family: "Karla", sans-serif;
+    font-size: 14.5px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .upload-section {
+    flex-direction: column;
+
+    & > div {
+      width: 100%;
+    }
+  }
+  .image-preview {
+    margin-left: 0;
+    height: 300px;
+  }
+  .upload-section {
+    height: unset;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+  .drop-zone {
+    width: 100%;
+  }
+}
